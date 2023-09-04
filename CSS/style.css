@@ -1,0 +1,260 @@
+
+/* Navigation styles */
+.logo {
+  padding: 0%;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  
+  .navigation {
+    display: grid;
+    background-color: #E5E5E5;
+    padding: 1%; 
+  }
+
+  .navigation a {
+    padding: 20px 15px;
+    font-family: Arial, Helvetica;
+    text-decoration: none;
+  }
+  
+  .inline-logo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    background-color: #E5E5E5;
+    padding: 1%;
+  }
+
+  body {
+    margin: 0px;
+  }
+  
+  /* Hero Image styles................................... */
+  #heroimg {
+  padding: 50px;
+  }
+  
+  .content {
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto; 
+  }
+
+   /*  <!--  My UX Skills section coded using CSS flex ----------------------------------------> */
+   #mySkills {
+    padding: 50x;
+    }
+
+   .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+   }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+ 
+.flex-container div {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+     
+   /*  <!--  My Projects section coded using CSS flex -----------------------------------------------------> */
+   #myProjects {
+    padding: 50px;
+    }
+
+   .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin-left:auto;
+    margin-right:auto;  
+   }
+
+   .workGrid {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .DOI, .BALEAF, .Nami, .ElRey {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  .DOI {
+    margin-top:20px;
+    background-image: url("../Images/S7 - Case Study Cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  .BALEAF {
+    background-image: url("../Images/Donation Overlay2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Nami {
+    background-image: url("../Images/Toddler Renders - 3 mama.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ElRey {
+    background-image: url("../Images/El Rey 2022 PS - EWADING A BOOK2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+  }
+  .text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica;
+    font-size: small;
+  }
+
+     /* Footer styles...................................................................................... */
+  
+  .footer {
+    display: grid; 
+    background-color: #E5E5E5;
+    padding: 25px;
+   
+  }
+
+  .footer a {
+    padding: 20px 40px;
+    font-family: Arial, ;
+    text-decoration: none;
+  }
+
+  .famfooter {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .top-div {
+    justify-content: center;
+    width:50%;
+  }
+
+  .bottom-div {
+    display: grid;
+    justify-content: center;
+  }
+
+  /* Typography CSS */
+
+h2 {
+  font-size: 28;
+  margin: 0px 0px;
+  color: #2F2F2F;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #2F2F2F;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+p {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #2F2F2F;
+}
+    
+  /*  Code a Mobile Media Query to Make Your Design Responsive for Mobile Devices */
+
+  @media only screen and (max-width: max-width) {
+    .workGrid {
+      display: column;
+      width: 100%
+      grid-template-columns; 1fr;
+      grid-template-areas: footer;
+      "DOI"
+      "BALEAF"
+      "Nami"
+      "ElRey"
+      ;
+    }
+  }
+      
+@media only screen and (max-width: 600px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    #heroGrid {
+      grid-template-areas: footer;
+      "DOI"
+      "BALEAF"
+      "Nami"
+      "ElRey"
+      ;;
+    }
+    #categoryGrid {
+      grid-template-rows:
+      grid-template-columns: 1fr;
+      grid-template-areas: footer;
+      "DOI"
+      "BALEAF"
+      "Nami"
+      "ElRey"
+      ;
+      ;
+    }
+  }
+  
+
+
+  
