@@ -39,9 +39,13 @@
   
   /* Hero Image styles................................... */
   #heroimg {
-  padding: 50px;
+  padding: 0px 0px 50px 50px;
   }
   
+  img {
+  padding: -100px 0px 50px 50px;
+  }
+
   .content {
     width: 500px;
     margin-left:auto;
@@ -126,6 +130,7 @@
 
   .text {
     background: rgb(0,0,0,0.7);
+    
     width: 100%;
     padding: 10px 20px;
     color: white;
@@ -196,65 +201,5 @@ p {
   margin: 0px 0px;
   color: #2F2F2F;
 }
-    
-  /*  Code a Mobile Media Query to Make Your Design Responsive for Mobile Devices */
-
-  @media only screen and (max-width: max-width) {
-    .workGrid {
-      display: column;
-      width: 100%
-      grid-template-columns; 1fr;
-      grid-template-areas: footer;
-      "DOI"
-      "BALEAF"
-      "Nami"
-      "ElRey"
-      ;
-    }
-  }
-      
-@media only screen and (max-width: 600px) {
-  #navigation {
-    display: none;
-  }
-  .icons {
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
-  }
-
-  @media only screen and (max-width: 600px) {
-    #headline {
-      position: static;
-      margin: 20px;
-    }
-    #heroGrid {
-      grid-template-areas: footer;
-      "DOI"
-      "BALEAF"
-      "Nami"
-      "ElRey"
-      ;;
-    }
-    #categoryGrid {
-      grid-template-rows:
-      grid-template-columns: 1fr;
-      grid-template-areas: footer;
-      "DOI"
-      "BALEAF"
-      "Nami"
-      "ElRey"
-      ;
-      ;
-    }
-  }
   
 
-
-  

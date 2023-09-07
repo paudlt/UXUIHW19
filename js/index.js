@@ -1,1 +1,3 @@
-console.log("Hello world!");
+$("button").click( function(){
+    $('.animate').animate( {left: '250px'}, 1000 );
+});
