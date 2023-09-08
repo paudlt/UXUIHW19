@@ -60,7 +60,7 @@
   }
 
   p {
-    padding: 50px 0px 50px 0px;
+    padding: 25px 0px 10px 0px;
     max-width: 500px;
     font-size: 16px;
     font-weight: 300;
@@ -210,14 +210,18 @@
     width:50%;
   }
 
+  .email {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+  }
+
+
   .bottom-div {
     display: grid;
     justify-content: center;
   }
 
-  .inline-block-element {
-    display: center;
-  }
 
   /* Typography CSS */
 
